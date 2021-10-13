@@ -13,6 +13,26 @@ body {
   font-style: normal;
 }
 /* GENERAL */
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 .link {
   text-decoration: none;
 }
@@ -20,6 +40,12 @@ body {
   list-style: none;
 }
 .btn {
+  width: 160px;
+  height: 40px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  padding: 0;
+  margin: 0;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -52,6 +78,29 @@ body {
 
 .header {
   background-color: #ccc;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+}
+.header-item:not(:last-child) {
+  margin-right: 40px;
+}
+.header-contacts {
+  margin-left: auto;
+}
+.header-logo {
+  margin-right: 70px;
 }
 
 .header-link {
@@ -72,12 +121,13 @@ body {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--white-title-color);
+  margin-right: 40px;
 }
 
 .header-btn {
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--white-title-color);
